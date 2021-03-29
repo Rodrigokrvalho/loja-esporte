@@ -20,7 +20,7 @@ html {
 
 body {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 85%;
     /* grid-template-rows: 15% 75% 10%; */
     grid-template-areas: 
     "header header" 
@@ -60,7 +60,7 @@ footer {
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding: 15px;
     
 }
 
@@ -122,8 +122,8 @@ footer {
 .promocoes {
     height: 50px;
     display: flex;
-    justify-content: space-around;
-    padding: 5px;
+    justify-content: space-evenly;
+    padding: 5px 20%;
     background-color: var(--color-secundaria-escuro);
     border-bottom: solid 2px var(--color-secundaria-claro);
 
@@ -138,15 +138,34 @@ footer {
 }
 
 .promocoes a:hover {
-    padding: 0 5px;
+    padding: 2px 5px;
+    background-color: var(--color-secundaria-claro);
+    border-radius: 10px;
+    color:  var(--color-destaque-escuro);
+    font-weight: 600;
 }
 
 #carrinho {
-    font-weight: 600;
-   
+    font-size: 1.3em;
 }
 
 /* ===== MAIN ===== */
+.promocao {
+    display: flex;
+    height: 250px;
+    margin: 10px;
+    justify-content: space-evenly;
+    align-content: center;
+    border: solid 1px black;
+    background: linear-gradient(to top left, white, var(--color-secundaria-claro));
+}
+
+.promocao p {
+    font-size: 85px;
+    font-weight: 600;
+    margin-top: 45px;
+}
+
 .produtos {
     display: flex;
     justify-content: space-around;
