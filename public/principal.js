@@ -75,10 +75,45 @@
 /*!************************!*\
   !*** ./dev/appMain.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const produtos = document.querySelectorAll('.produto')\r\nconst produto1 = document.querySelector('#p01')\r\nprodutos.forEach(p => {\r\n    p.onclick = function (){\r\n        const idProduto = p.getAttribute(\"id\")\r\n\r\n        \r\n    }\r\n})\r\n\n\n//# sourceURL=webpack:///./dev/appMain.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets */ \"./dev/assets/index.js\");\n\r\n\r\nconst produtos = document.querySelectorAll('.produto')\r\nconst produto1 = document.querySelector('#p01')\r\nprodutos.forEach(p => {\r\n    p.onclick = function (){\r\n        const idProduto = p.getAttribute(\"id\")\r\n\r\n        \r\n    }\r\n})\r\n\n\n//# sourceURL=webpack:///./dev/appMain.js?");
+
+/***/ }),
+
+/***/ "./dev/assets/index.js":
+/*!*****************************!*\
+  !*** ./dev/assets/index.js ***!
+  \*****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_globalStyle_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/globalStyle.scss */ \"./dev/assets/scss/globalStyle.scss\");\n/* harmony import */ var _scss_globalStyle_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_globalStyle_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/main.scss */ \"./dev/assets/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\n\n//# sourceURL=webpack:///./dev/assets/index.js?");
+
+/***/ }),
+
+/***/ "./dev/assets/scss/globalStyle.scss":
+/*!******************************************!*\
+  !*** ./dev/assets/scss/globalStyle.scss ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./dev/assets/scss/globalStyle.scss?");
+
+/***/ }),
+
+/***/ "./dev/assets/scss/main.scss":
+/*!***********************************!*\
+  !*** ./dev/assets/scss/main.scss ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./dev/assets/scss/main.scss?");
 
 /***/ })
 

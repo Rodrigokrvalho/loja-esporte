@@ -1,11 +1,12 @@
 {
-  "name": "Loja-esporte",
+  "name": "loja-esporte",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "appMain.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=production webpack",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
