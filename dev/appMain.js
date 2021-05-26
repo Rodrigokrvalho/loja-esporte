@@ -1,1 +1,0 @@
-// $( "body" ).load( "/dev/assets/template/base.html" );

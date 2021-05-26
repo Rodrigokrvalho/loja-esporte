@@ -1,7 +1,6 @@
-
 const produtos = [
     {
-        img: "../imgs/camiseta-femenina-01.jpg",
+        img: "./assets/imgs/camiseta-femenina-01.jpg",
         titulo: 'camiseta',
         valor: 100,
         oferta: true,
@@ -9,7 +8,7 @@ const produtos = [
         freteGratis: true,
     },
     {
-        img: "../imgs/camiseta-femenina-02.jpg",
+        img: "./assets/imgs/camiseta-femenina-02.jpg",
         titulo: 'camiseta',
         valor: 100,
         oferta: true,
@@ -17,7 +16,7 @@ const produtos = [
         freteGratis: false,
     },
     {
-        img: "../imgs/camiseta-femenina-03.jpg",
+        img: "./assets/imgs/camiseta-femenina-03.jpg",
         titulo: 'camiseta',
         valor: 100,
         oferta: true,
@@ -25,7 +24,7 @@ const produtos = [
         freteGratis: false,
     },
     {
-        img: "../imgs/camiseta-femenina-04.jpg",
+        img: "./assets/imgs/camiseta-femenina-04.jpg",
         titulo: 'camiseta',
         valor: 100,
         oferta: true,
@@ -33,7 +32,7 @@ const produtos = [
         freteGratis: false,
     },
     {
-        img: "../imgs/camiseta-femenina-05.jpg",
+        img: "./assets/imgs/camiseta-femenina-05.jpg",
         titulo: 'camiseta',
         valor: 100,
         oferta: true,
@@ -41,7 +40,7 @@ const produtos = [
         freteGratis: false,
     },
     {
-        img: "../imgs/camiseta-masculina-01.jpg",
+        img: "./assets/imgs/camiseta-masculina-01.jpg",
         titulo: 'camiseta',
         valor: 100,
         oferta: false,
@@ -49,7 +48,7 @@ const produtos = [
         freteGratis: true,
     },
     {
-        img: "../imgs/camiseta-masculina-02.jpg",
+        img: "./assets/imgs/camiseta-masculina-02.jpg",
         titulo: 'camiseta',
         valor: 100,
         oferta: false,
@@ -57,7 +56,7 @@ const produtos = [
         freteGratis: true,
     },
     {
-        img: "../imgs/camiseta-masculina-03.jpg",
+        img: "./assets/imgs/camiseta-masculina-03.jpg",
         titulo: 'camiseta',
         valor: 100,
         oferta: false,
@@ -65,7 +64,7 @@ const produtos = [
         freteGratis: true,
     },
     {
-        img: "../imgs/camiseta-masculina-04.jpg",
+        img: "./assets/imgs/camiseta-masculina-04.jpg",
         titulo: 'camiseta',
         valor: 100,
         oferta: true,
@@ -73,7 +72,7 @@ const produtos = [
         freteGratis: false,
     },
     {
-        img: "../imgs/camiseta-masculina-05.jpg",
+        img: "./assets/imgs/camiseta-masculina-05.jpg",
         titulo: 'camiseta',
         valor: 100,
         oferta: true,
