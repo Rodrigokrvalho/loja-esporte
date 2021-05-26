@@ -1,0 +1,364 @@
+:root {
+    --color-primaria: #ffa600;
+    --color-destaque-escuro: rgb(61, 61, 61);
+    --color-destaque-claro: #FFC00D;
+    --color-secundaria-escuro: #888888;
+    --color-secundaria-claro: #19FFBF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 215px calc(100% - 215px);
+    grid-template-areas: 
+    "header header" 
+    "aside main" 
+    "aside footer";
+    background-color: white;
+}
+
+header {
+    grid-area: header;
+    background-color: var(--color-destaque-escuro);
+}
+
+aside {
+    grid-area: aside;
+    background-color: var(--color-destaque-escuro);
+    min-height: 85.7vh;
+    padding-left: 10%;
+}
+
+main {
+    grid-area: main;
+    min-height: 80vh;
+}
+
+/* ====== Footer ====== */
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    grid-area: footer;
+    font-size: 25px;
+    padding: 10px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.social a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.social img{
+    height: 25px;
+    width: 25px;
+}
+
+/* ===== HEADER ===== */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+h1 {
+    color: white;
+}
+.cabecalho a {
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.pesquisa{
+    display: flex;
+    margin-top: 10px;
+    width: 40%;
+}
+
+.pesquisa input {
+    margin: 0;
+    padding: 0;
+    height: 35px;
+    width: 100%;
+    border: solid 3px var(--color-secundaria-claro);
+    border-radius: 10px;
+}
+
+.pesquisa button {
+    margin: 0 5px ;
+    height: 35px;
+    width: 45px;
+    border-radius: 15px;
+    border: solid 3px var(--color-secundaria-claro);
+    background-color: white;
+    cursor: pointer;
+}
+
+.pesquisa button img {
+    height: 100%;
+}
+
+.registro {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.registro a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 5px;
+    padding: 5px 20px;
+    color: white;
+    border: solid 2px var(--color-secundaria-claro);
+    border-radius: 15px;
+}
+
+.registro a:hover {
+    background-color: var(--color-secundaria-claro);
+    color: var(--color-destaque-escuro);
+    font-weight: 600;
+}
+
+.promocoes {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 15%;
+    background-color: var(--color-secundaria-escuro);
+    border-bottom: solid 2px var(--color-secundaria-claro);
+
+}
+
+.promocoes a {
+    text-decoration: none;
+    padding:  5px;
+    font-size: 1.2em;
+    color: white;
+
+}
+
+.promocoes a:hover {
+    padding: 1px 3px;
+    background-color: var(--color-secundaria-claro);
+    border-radius: 10px;
+    color:  var(--color-destaque-escuro);
+    font-weight: 600;
+}
+
+.promocoes .selecionado {
+    text-decoration: underline var(--color-secundaria-claro);
+}
+
+#carrinho {
+    font-size: 1.3em;
+}
+
+
+
+/* ===== ASIDE ===== */
+.menu-nav {
+    padding: 5px 0px 5px 5px;
+    color: white;
+    max-width: 250px;
+}
+
+.menu-nav details {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    max-width: 220px;
+    
+}
+
+.menu-nav summary {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.menu-nav a {
+    margin: 3px 0;
+    padding: 0 7%;
+    font-size: 1.15em;
+    text-decoration: none;
+    color: var(--color-secundaria-claro);
+    opacity: 95%;
+}
+
+.menu-nav a:hover {
+    border-right: solid 5px var(--color-secundaria-claro);
+    border-left: solid 5px var(--color-secundaria-claro);
+    border-radius: 3px;
+    margin-right: 5px;
+    opacity: 95%;
+    font-size: 1.2em ;
+    margin: 0;
+    background-color: rgb(78, 78, 78)
+}
+
+.menu-nav .selecionado {
+    border-right: solid 5px var(--color-secundaria-claro);
+    border-left: solid 5px var(--color-secundaria-claro);
+    border-radius: 3px;
+    margin-right: 5px;
+    opacity: 95%;
+    font-size: 1.2em ;
+    margin: 0;
+    background-color: rgb(78, 78, 78)
+}
+
+
+/* ===== MAIN ===== */
+.promocao {
+    display: flex;
+    height: 250px;
+    margin: 10px;
+    justify-content: space-evenly;
+    align-content: center;
+    border: solid 1px black;
+    background: linear-gradient(to top left, white, var(--color-secundaria-claro));
+}
+
+.promocao p {
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 45px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 260px;
+    margin: 20px 10px;
+    box-shadow: 0px 2px 10px 1px gray;
+    border-radius: 3px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.produto:hover {
+    height: 440px;
+    width: 280px;
+    margin: 0;
+}
+
+.produto img {
+    padding: 2.5% 5%;
+    max-width: 100%;
+    max-height: 70%;
+   
+    
+}
+
+.descricao{
+    display: flex;
+    height: 15vh;
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.descricao h2 {
+    padding: 0 5px;
+    text-align: right;
+    font-size: 1.6em;
+    color: var(--color-primaria);
+}
+.descricao h3 {
+    padding:  0 5px;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.descricao h4 {
+    font-size: 1em;
+    font-weight: 400;
+    text-align: right;
+    padding: 0 5px;
+}
+
+/* ====== Responsividade ====== */
+@media (max-width: 865px) {
+    .produto {
+        display: flex;
+        flex-direction: column;
+        height: 420px;
+        width: 300px;
+        margin: 40px 10px;
+        box-shadow: 0px 2px 10px 1px gray;
+        border-radius: 3px;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .produto:hover {
+        height: 460px;
+        width: 320px;
+        margin: 0;
+    }
+
+    body {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100vw;
+        grid-template-areas: 
+        "header" 
+        "main" 
+        "footer";
+        background-color: white;
+    }
+
+    header .cabecalho {
+        flex-direction: column;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header .pesquisa {
+        width: calc(100% - 10px);
+    }
+
+    header .promocoes {
+        padding: 0;
+        height: auto;
+    }
+    
+    aside {
+        display: none;
+    }
+}
